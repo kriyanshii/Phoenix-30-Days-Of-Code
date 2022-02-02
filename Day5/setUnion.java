@@ -7,8 +7,20 @@ public class Solution {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        System.out.println(Math.min(n-a, b+1));
+        int m = sc.nextInt();
+        HashSet <Integer> set = new HashSet();
+        for(int i = 0; i<n;i++){
+            set.add(sc.nextInt());
+        }
+        for(int i = 0; i<m;i++){
+            set.add(sc.nextInt());
+        }
+        // for(int i = 0; i<n;i++){
+        //     set.add(arr[i]);
+        // }
+        // for(int i = 0; i<m;i++){
+        //     set.add(brr[i]);
+        // }
+        System.out.println(set.size());
     }
 }
